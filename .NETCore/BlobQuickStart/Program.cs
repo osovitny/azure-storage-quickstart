@@ -14,15 +14,36 @@
 </file>
 */
 
+using Microsoft.WindowsAzure.Storage;
 using System;
 
 namespace Osovitny.Azure.Storage.Blob.QuickStart
 {
-    class Program
+  class Program
+  {
+    private static string STORAGE_CONNECTIONSTRING = "PUT-YOUR-STORAGE-CONNECTIONSTRING-HERE";
+
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+      /*
+        All Samples for fictional company: Alex Corporation
+      */
+
+      CloudStorageAccount storageAccount = null;
+
+      if (!CloudStorageAccount.TryParse(STORAGE_CONNECTIONSTRING, out storageAccount))
+      {
+          Console.WriteLine("A connection string is not correct");
+          Console.WriteLine("Press any key to exit application.");
+          Console.ReadLine();
+          return;
+      }
+
+      Basics.ProcessSamplesAsync(storageAccount).Wait();
+      Advanced.ProcessSamplesAsync(storageAccount).Wait();
+
+      Console.WriteLine("Press any key to exit the sample application.");
+      Console.ReadLine();
     }
+  }
 }
