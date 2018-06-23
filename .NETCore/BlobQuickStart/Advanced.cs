@@ -2,14 +2,14 @@
 <file>
   Description:
 
-	Authors:
-		Vadim Osovitny
+  Authors:
+    Vadim Osovitny
     Anatoly Osovitny
 
-	Created:
-		22 Jun 2018
+  Created:
+    22 Jun 2018
 
-	Copyright (c) 2018 Osovitny Inc. All rights reserved.
+  Copyright (c) 2018 Osovitny Inc. All rights reserved.
 </file>
 */
 

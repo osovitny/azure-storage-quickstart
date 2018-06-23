@@ -1,16 +1,16 @@
 ﻿/*
 <file>
   Description:
-	  Azure Storage Blob Quickstart: Demonstrate how to upload, list, download, and delete blobs
+    Azure Storage Blob Quickstart: Demonstrate how to upload, list, download, and delete blobs
 
-	Authors:
-		Vadim Osovitny
+  Authors:
+    Vadim Osovitny
     Anatoly Osovitny
 
-	Created:
-		22 Jun 2018
+  Created:
+    22 Jun 2018
 
-	Copyright (c) 2018 Osovitny Inc. All rights reserved.
+  Copyright (c) 2018 Osovitny Inc. All rights reserved.
 </file>
 */
 
